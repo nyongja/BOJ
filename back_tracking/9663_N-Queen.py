@@ -1,6 +1,5 @@
 n = int(input())
 cnt = 0
-
 board = [0] * n
 
 def check(idx) :
