@@ -15,7 +15,7 @@ for _ in range(n) :
         answer.append('-')
     elif tmp_n > num : # 마지막으로 들어간 숫자가 내가 원하는 숫자보다 크면
         if stack.pop() != num : # 뽑아서 내가 원하는 숫자가 있는지 비교해보기
-            flag = False
+            flag = False 
             break
         else :     
             answer.append('-')
