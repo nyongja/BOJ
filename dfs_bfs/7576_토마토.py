@@ -12,7 +12,7 @@ def chk_pos(x, y) :
     return True
 
 def bfs(queue) :
-    global array
+    global array, n, m
     answer = 0
     while queue :
         x, y = queue.popleft()
@@ -22,7 +22,14 @@ def bfs(queue) :
                 array[nx][ny] = array[x][y]+1
                 queue.append((nx, ny))
                 answer = max(answer, array[nx][ny])
-    return answer-1
+
+    for i in range(n) :
+        for j in range(m) :
+            if array[i][j] == 0 :
+                return -1
+    if answer == 0 :
+        return 0
+    return answer - 1
 
 m, n = map(int, input().split()) # 상자의 크기 ( 2 ~ 1000)
 array = [list(map(int, input().split())) for _ in range(n)]
