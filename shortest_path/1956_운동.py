@@ -16,4 +16,8 @@ for k in range(v+1) :
 ans = INF
 for i in range(1, v+1) :
     ans = min(graph[i][i], ans)
-print(ans)
+
+if ans == INF :
+    print(-1)
+else :
+    print(ans)
