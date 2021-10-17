@@ -1,4 +1,3 @@
-from copy import deepcopy
 from collections import deque
 
 n, q = map(int, input().split()) # 맵 크기, 파이어스톰 횟수
@@ -84,12 +83,3 @@ for x in range(2**n) :
         
 print(total_cnt)
 print(max_num)
-
-
-
-    
-
-    
-
-    
-    
