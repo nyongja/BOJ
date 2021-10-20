@@ -71,4 +71,4 @@ def shark_move(array, fish, x, y, d, eat) :
     return
 
 shark_move(array, fish, 0, 0, shark[2], eat)
-print(answer)
+print(answer) 
