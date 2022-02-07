@@ -1,5 +1,5 @@
 import sys
-sys.getrecursionlimit(10**6)
+sys.setrecursionlimit(10**6)
 input = sys.stdin.readline
 
 # 특정 원소가 속한 집합 찾기
