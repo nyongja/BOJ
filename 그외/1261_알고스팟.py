@@ -1,5 +1,4 @@
 from collections import deque
-from tabnanny import check
 
 def solution(M, N, array) :
     visited = [[-1] * M for _ in range(N)]
