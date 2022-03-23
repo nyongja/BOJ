@@ -39,6 +39,7 @@ def solution(M, N, array) :
     return visited[-1][-1]
 
 
+
 M, N = map(int, input().split()) # 가로, 세로
 array = list(list(map(int, input().strip())) for _ in range(N))
 print(solution(M, N, array))
